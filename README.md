@@ -9,9 +9,9 @@ This project requires an up-to-date version of Python 3.
 It also uses [pipenv](https://pipenv.readthedocs.io/) to manage packages.
 
 To set up this project on your local machine:
-* Clone it from this GitHub repository.
-* Run `pipenv install` from the command line in the project's root directory.
-* For Web UI tests, install the appropriate WebDriver executables
+1. Clone it from this GitHub repository.
+2. Run `pipenv install` from the command line in the project's root directory.
+3. For Web UI tests, install the appropriate WebDriver executables
   (like [ChromeDriver](http://chromedriver.chromium.org/) or [geckodriver](https://github.com/mozilla/geckodriver/releases)).
 
 ## Running Tests
