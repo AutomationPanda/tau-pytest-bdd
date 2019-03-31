@@ -17,6 +17,7 @@ To set up this project on your local machine:
 ## Running Tests
 Run tests simply using the `pytest` command.
 Depending upon your environment, it may be better to use `python -m pytest`.
+If you are using `pipenv`, then run `pipenv run python -m pytest`.
 Use the "-k" option to filter tests by tags.
 
 ## More Info
