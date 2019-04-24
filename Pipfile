@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 pytest-bdd = "*"
 requests = "*"
+selenium = "*"
 
 [requires]
 python_version = "3.7"

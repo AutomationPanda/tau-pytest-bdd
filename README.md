@@ -11,8 +11,8 @@ It also uses [pipenv](https://pipenv.readthedocs.io/) to manage packages.
 To set up this project on your local machine:
 1. Clone it from this GitHub repository.
 2. Run `pipenv install` from the command line in the project's root directory.
-3. For Web UI tests, install the appropriate WebDriver executables
-  (like [ChromeDriver](http://chromedriver.chromium.org/) or [geckodriver](https://github.com/mozilla/geckodriver/releases)).
+3. For Web UI tests, install the appropriate browser and WebDriver executable.
+   * These tests use Firefox and [geckodriver](https://github.com/mozilla/geckodriver/releases).
 
 ## Running Tests
 Run tests simply using the `pytest` command.
