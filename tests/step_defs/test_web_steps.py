@@ -28,7 +28,7 @@ scenarios('../features/web.feature')
 # When Steps
 
 @when(parsers.parse('the user searches for "{text}"'))
-@when(parsers.parse('the user searches for the phrase:\n"""{text}"""'))
+@when(parsers.parse('the user searches for the phrase:\n{text}'))
 def search_phrase(browser, text):
     search_input = browser.find_element_by_id('search_form_input_homepage')
     search_input.send_keys(text + Keys.RETURN)

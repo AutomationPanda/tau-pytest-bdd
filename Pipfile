@@ -6,8 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pytest = "*"
-pytest-bdd = "*"
+pytest = "6.1.2"
+pytest-bdd = "4.0.1"
 requests = "*"
 selenium = "*"
 
