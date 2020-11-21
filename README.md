@@ -10,7 +10,6 @@ Unfortunately, **the version 4 update has incompatible changes.**
 `@given` methods must now include a `target_fixture` parameter in order to work like pytest fixtures.
 The TAU videos and transcripts use the old style of code,
 but the example code here now uses the new style of code.
-
 Below is an example of the new style of code needed:
 
 ```python
