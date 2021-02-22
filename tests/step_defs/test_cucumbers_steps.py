@@ -11,7 +11,7 @@ EXTRA_TYPES = {
 }
 
 
-@given(parsers.cfparse('the basket has "{initial:Number}" cucumbers', extra_types=EXTRA_TYPES))
+@given(parsers.cfparse('the basket has "{initial:Number}" cucumbers', extra_types=EXTRA_TYPES), target_fixture='basket')
 def basket(initial):
     return CucumberBasket(initial_count=initial)
 
