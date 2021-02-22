@@ -106,3 +106,6 @@ venv.bak/
 # PyCharm files
 .idea
 *.iml
+
+# VS Code files
+.vscode
