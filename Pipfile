@@ -6,10 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pytest = "6.1.2"
-pytest-bdd = "4.0.1"
+pytest = "*"
+pytest-bdd = "*"
 requests = "*"
 selenium = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"

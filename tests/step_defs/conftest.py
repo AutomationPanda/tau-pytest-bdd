@@ -30,6 +30,6 @@ def browser():
 
 # Shared Given Steps
 
-@given('the DuckDuckGo home page is displayed')
+@given('the DuckDuckGo home page is displayed', target_fixture='ddg_home')
 def ddg_home(browser):
     browser.get(DUCKDUCKGO_HOME)
