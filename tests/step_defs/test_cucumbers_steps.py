@@ -8,7 +8,7 @@ def test_add():
     pass
 
 
-@given("the basket has 2 cucumbers")
+@given("the basket has 2 cucumbers", target_fixture='basket')
 def basket():
     return CucumberBasket(initial_count=2)
 
