@@ -18,8 +18,8 @@ CONVERTERS = {
 scenarios('../features/cucumbers.feature', example_converters=CONVERTERS)
 
 
-@given(parsers.cfparse('the basket has "{initial:Number}" cucumbers', extra_types=EXTRA_TYPES))
-@given('the basket has "<initial>" cucumbers')
+@given(parsers.cfparse('the basket has "{initial:Number}" cucumbers', extra_types=EXTRA_TYPES), target_fixture='basket')
+@given('the basket has "<initial>" cucumbers', target_fixture='basket')
 def basket(initial):
     return CucumberBasket(initial_count=initial)
 

@@ -21,7 +21,7 @@ scenarios('../features/service.feature', example_converters=dict(phrase=str))
 
 # Given Steps
 
-@given('the DuckDuckGo API is queried with "<phrase>"')
+@given('the DuckDuckGo API is queried with "<phrase>"', target_fixture='ddg_response')
 def ddg_response(phrase):
     params = {'q': phrase, 'format': 'json'}
     response = requests.get(DUCKDUCKGO_API, params=params)
