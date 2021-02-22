@@ -43,7 +43,7 @@ def browser():
 
 # Given Steps
 
-@given('the DuckDuckGo home page is displayed')
+@given('the DuckDuckGo home page is displayed', target_fixture='ddg_home')
 def ddg_home(browser):
     browser.get(DUCKDUCKGO_HOME)
 
@@ -51,7 +51,7 @@ def ddg_home(browser):
 # When Steps
 
 @when(parsers.parse('the user searches for "{text}"'))
-@when(parsers.parse('the user searches for the phrase:\n"""{text}"""'))
+@when(parsers.parse('the user searches for the phrase:\n{text}'))
 def search_phrase(browser, text):
     search_input = browser.find_element_by_name('q')
     search_input.send_keys(text + Keys.RETURN)
